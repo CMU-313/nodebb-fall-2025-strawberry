@@ -28,6 +28,21 @@ body.template-topic {
 				}
 				&.deleted .post-container .content { opacity: .65; }
 
+				// Anonymous post styling
+				.fa-user-secret {
+					font-size: 0.75rem;
+					opacity: 0.7;
+				}
+
+				.staff-anonymous-info {
+					background-color: rgba(255, 193, 7, 0.1);
+					border: 1px solid rgba(255, 193, 7, 0.3);
+					border-radius: 4px;
+					padding: 2px 6px;
+					margin-left: 8px;
+					font-size: 0.75rem;
+				}
+
 				[component="post/content"] {
 					@include fix-lists();
 
