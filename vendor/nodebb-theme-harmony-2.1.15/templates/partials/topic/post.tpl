@@ -63,10 +63,10 @@
 				<span class="badge bg-danger rounded-1">[[user:banned]]</span>
 				{{{ end }}}
 
-				{{{ if ./isAnonymous && privileges.isAdminOrMod }}}
-				<div class="staff-anonymous-info d-flex align-items-center gap-1 text-muted small">
+				{{{ if ./isAnonymous }}}
+				<div class="staff-anonymous-info d-flex align-items-center gap-1 text-muted small {{{ if !privileges.isAdminOrMod }}}hidden{{{ end }}}">
 					<i class="fa fa-eye text-warning" title="[[topic:staff-view]]"></i>
-					<span>[[topic:real-author]]: <strong>{posts.user.displayname}</strong></span>
+					<span>[[topic:real-author]]: <strong>{./realUser.displayname}</strong></span>
 				</div>
 				{{{ end }}}
 
