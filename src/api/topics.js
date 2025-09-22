@@ -63,6 +63,14 @@ topicsAPI.create = async function (caller, data) {
 	const payload = { ...data };
 	delete payload.tid;
 	payload.tags = payload.tags || [];
+	
+	// Handle anonymous posting
+	if (data.isAnonymous === true || data.isAnonymous === 'true') {
+		payload.isAnonymous = 1;
+	} else {
+		payload.isAnonymous = 0;
+	}
+	
 	apiHelpers.setDefaultPostData(caller, payload);
 	const isScheduling = parseInt(data.timestamp, 10) > payload.timestamp;
 	if (isScheduling) {
@@ -99,6 +107,14 @@ topicsAPI.reply = async function (caller, data) {
 	}
 	const payload = { ...data };
 	delete payload.pid;
+	
+	// Handle anonymous posting
+	if (data.isAnonymous === true || data.isAnonymous === 'true') {
+		payload.isAnonymous = 1;
+	} else {
+		payload.isAnonymous = 0;
+	}
+	
 	apiHelpers.setDefaultPostData(caller, payload);
 
 	await meta.blacklist.test(caller.ip);

@@ -144,6 +144,22 @@ module.exports = function (Topics) {
 				postObj.replies = replies[i];
 				postObj.selfPost = parseInt(uid, 10) > 0 && parseInt(uid, 10) === postObj.uid;
 
+				// Handle anonymous posts - mask user information
+				postObj.isAnonymous = postObj.isAnonymous === 1;
+				if (postObj.isAnonymous && postObj.user) {
+					// Store original user data for internal use (admins/mods may need to see this)
+					postObj.originalUser = { ...postObj.user };
+					// Mask the user information for public display
+					postObj.user = {
+						uid: postObj.user.uid, // Keep uid for internal linking
+						username: 'Anonymous',
+						userslug: null,
+						picture: null,
+						status: 'offline',
+						displayname: 'Anonymous'
+					};
+				}
+
 				// Username override for guests, if enabled
 				if (meta.config.allowGuestHandles && postObj.uid === 0 && postObj.handle) {
 					postObj.user.username = validator.escape(String(postObj.handle));

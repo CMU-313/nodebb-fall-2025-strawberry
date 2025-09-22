@@ -22,7 +22,7 @@ module.exports = function (Posts) {
 		options.escape = options.hasOwnProperty('escape') ? options.escape : false;
 		options.extraFields = options.hasOwnProperty('extraFields') ? options.extraFields : [];
 
-		const fields = ['pid', 'tid', 'toPid', 'url', 'content', 'sourceContent', 'uid', 'timestamp', 'deleted', 'upvotes', 'downvotes', 'replies', 'handle'].concat(options.extraFields);
+		const fields = ['pid', 'tid', 'toPid', 'url', 'content', 'sourceContent', 'uid', 'timestamp', 'deleted', 'upvotes', 'downvotes', 'replies', 'handle', 'isAnonymous'].concat(options.extraFields);
 
 		let posts = await Posts.getPostsFields(pids, fields);
 		posts = posts.filter(Boolean);
@@ -58,6 +58,21 @@ module.exports = function (Posts) {
 			post.isMainPost = post.topic && post.pid === post.topic.mainPid;
 			post.deleted = post.deleted === 1;
 			post.timestampISO = utils.toISOString(post.timestamp);
+			
+			// Handle anonymous posts - mask user information
+			post.isAnonymous = post.isAnonymous === 1;
+			if (post.isAnonymous && post.user) {
+				// Store original user data for internal use (admins/mods may need to see this)
+				post.originalUser = { ...post.user };
+				// Mask the user information for public display
+				post.user = {
+					uid: post.user.uid, // Keep uid for internal linking
+					username: 'Anonymous',
+					userslug: null,
+					picture: null,
+					status: 'offline'
+				};
+			}
 
 			// url only applies to remote posts; assume permalink otherwise
 			if (utils.isNumber(post.pid)) {
