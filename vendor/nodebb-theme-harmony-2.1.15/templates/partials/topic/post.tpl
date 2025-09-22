@@ -43,7 +43,14 @@
 						</a>
 					</div>
 
-					<a class="fw-bold text-nowrap text-truncate" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.displayname}</a>
+					<a class="fw-bold text-nowrap text-truncate" href="{{{ if ./user.userslug }}}{config.relative_path}/user/{./user.userslug}{{{ else }}}#{{{ end }}}" data-username="{posts.user.username}" data-uid="{posts.user.uid}">
+						{{{ if ./isAnonymous }}}
+						Anonymous
+						<i class="fa fa-user-secret text-muted ms-1" title="[[topic:anonymous-post]]" data-bs-toggle="tooltip"></i>
+						{{{ else }}}
+						{posts.user.displayname}
+						{{{ end }}}
+					</a>
 				</div>
 
 				{{{ each posts.user.selectedGroups }}}
@@ -54,6 +61,13 @@
 
 				{{{ if posts.user.banned }}}
 				<span class="badge bg-danger rounded-1">[[user:banned]]</span>
+				{{{ end }}}
+
+				{{{ if ./isAnonymous && privileges.isAdminOrMod }}}
+				<div class="staff-anonymous-info d-flex align-items-center gap-1 text-muted small">
+					<i class="fa fa-eye text-warning" title="[[topic:staff-view]]"></i>
+					<span>[[topic:real-author]]: <strong>{posts.user.displayname}</strong></span>
+				</div>
 				{{{ end }}}
 
 				<div class="d-flex gap-1 align-items-center">
