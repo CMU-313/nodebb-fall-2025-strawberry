@@ -3,7 +3,14 @@
         <div class="d-flex gap-2 align-items-center">
             <div>
                 <a href="{{{ if post.user.userslug }}}{config.relative_path}/user/{post.user.userslug}{{{ else }}}#{{{ end }}}">{buildAvatar(post.user, "20px", true, "", "user/picture")}</a>
-                <a href="{{{ if post.user.userslug }}}{config.relative_path}/user/{post.user.userslug}{{{ else }}}#{{{ end }}}">{post.user.username}</a>
+                <a href="{{{ if post.user.userslug }}}{config.relative_path}/user/{post.user.userslug}{{{ else }}}#{{{ end }}}">
+                    {{{ if post.isAnonymous }}}
+                    Anonymous
+                    <i class="fa fa-user-secret text-muted ms-1" title="[[topic:anonymous-post]]" data-bs-toggle="tooltip"></i>
+                    {{{ else }}}
+                    {post.user.username}
+                    {{{ end }}}
+                </a>
             </div>
             <div>
                 <a href="{config.relative_path}/post/{post.pid}" class="timeago text-xs text-secondary lh-1" style="vertical-align: middle;" title="{post.timestampISO}"></a>

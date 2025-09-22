@@ -2,7 +2,14 @@
 	<div class="d-flex gap-2 text-nowrap">
 		<div class="d-flex flex-nowrap gap-1 align-items-center">
 			<a href="{config.relative_path}/user/{./parent.user.userslug}" class="text-decoration-none lh-1">{buildAvatar(./parent.user, "16px", true, "not-responsive align-middle")}</a>
-			<a class="fw-semibold text-truncate" style="max-width: 150px;" href="{config.relative_path}/user/{./parent.user.userslug}">{./parent.user.displayname}</a>
+			<a class="fw-semibold text-truncate" style="max-width: 150px;" href="{config.relative_path}/user/{./parent.user.userslug}">
+				{{{ if ./parent.isAnonymous }}}
+				Anonymous
+				<i class="fa fa-user-secret text-muted ms-1" title="[[topic:anonymous-post]]" data-bs-toggle="tooltip"></i>
+				{{{ else }}}
+				{./parent.user.displayname}
+				{{{ end }}}
+			</a>
 		</div>
 
 		<a href="{config.relative_path}/post/{encodeURIComponent(./parent.pid)}" class="text-muted timeago text-nowrap hidden" title="{./parent.timestampISO}"></a>
