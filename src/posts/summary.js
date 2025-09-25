@@ -70,7 +70,7 @@ module.exports = function (Posts) {
 					username: 'Anonymous',
 					userslug: null,
 					picture: null,
-					status: 'offline'
+					status: 'offline',
 				};
 			}
 

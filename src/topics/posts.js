@@ -156,7 +156,7 @@ module.exports = function (Topics) {
 						userslug: null,
 						picture: null,
 						status: 'offline',
-						displayname: 'Anonymous'
+						displayname: 'Anonymous',
 					};
 				}
 
