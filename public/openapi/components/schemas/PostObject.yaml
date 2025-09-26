@@ -18,6 +18,9 @@ PostObject:
         For posts received via ActivityPub, it is the url of the original piece of content.
     content:
       type: string
+    isAnonymous:
+      type: boolean
+      description: Whether the post was created anonymously
     sourceContent:
       type: string
       nullable: true
@@ -180,6 +183,9 @@ PostDataObject:
           type: number
         downvotes:
           type: number
+        isAnonymous:
+          type: boolean
+          description: Whether the post was created anonymously
         announces:
           type: number
         bookmarks:
