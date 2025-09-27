@@ -60,6 +60,13 @@ define('forum/topic/posts', [
 
 	Posts.modifyPostsByPrivileges = function (posts) {
 		posts.forEach(function (post) {
+			if (post.isAnonymous) {
+				post.displayAnonymous = true;
+				// Show real author to staff users only
+				if (ajaxify.data.privileges.isAdminOrMod) {
+					post.showRealAuthor = true;
+				}
+			}
 			post.selfPost = !!app.user.uid && parseInt(post.uid, 10) === parseInt(app.user.uid, 10);
 			post.topicOwnerPost = parseInt(post.uid, 10) === parseInt(ajaxify.data.uid, 10);
 
