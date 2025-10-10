@@ -110,4 +110,14 @@ SocketPosts.editQueuedContent = async function (socket, data) {
 	return await api.posts.editQueuedPost(socket, data);
 };
 
+SocketPosts.endorse = async function (socket, data) {
+	sockets.warnDeprecated(socket, 'POST /api/v3/posts/:pid/endorse');
+	return await api.posts.endorse(socket, data);
+};
+
+SocketPosts.unendorse = async function (socket, data) {
+	sockets.warnDeprecated(socket, 'DELETE /api/v3/posts/:pid/endorse');
+	return await api.posts.unendorse(socket, data);
+};
+
 require('../promisify')(SocketPosts);

@@ -477,6 +477,95 @@ postsAPI.unbookmark = async function (caller, data) {
 	return await apiHelpers.postCommand(caller, 'unbookmark', 'bookmarked', '', data);
 };
 
+postsAPI.endorse = async function (caller, data) {
+	if (!data || !data.pid) {
+		throw new Error('[[error:invalid-data]]');
+	}
+	if (!caller.uid) {
+		throw new Error('[[error:not-logged-in]]');
+	}
+
+	const cid = await posts.getCidByPid(data.pid);
+	const [isAdmin, isModerator] = await Promise.all([
+		privileges.users.isAdministrator(caller.uid),
+		privileges.users.isModerator(caller.uid, cid),
+	]);
+
+	if (!isAdmin && !isModerator) {
+		throw new Error('[[error:no-privileges]]');
+	}
+
+	const postData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed']);
+	if (postData.isEndorsed) {
+		throw new Error('[[error:post-already-endorsed]]');
+	}
+
+	const now = Date.now();
+	await posts.setPostFields(data.pid, {
+		isEndorsed: 1, // Store as 1 instead of true for Redis compatibility
+		endorsedBy: caller.uid,
+		endorsedAt: now,
+	});
+
+	const returnData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed', 'endorsedBy', 'endorsedAt']);
+
+	websockets.in(`topic_${postData.tid}`).emit('event:post_endorsed', returnData);
+
+	await events.log({
+		type: 'post-endorse',
+		uid: caller.uid,
+		pid: data.pid,
+		tid: postData.tid,
+		ip: caller.ip,
+	});
+
+	return returnData;
+};
+
+postsAPI.unendorse = async function (caller, data) {
+	if (!data || !data.pid) {
+		throw new Error('[[error:invalid-data]]');
+	}
+	if (!caller.uid) {
+		throw new Error('[[error:not-logged-in]]');
+	}
+
+	const cid = await posts.getCidByPid(data.pid);
+	const [isAdmin, isModerator] = await Promise.all([
+		privileges.users.isAdministrator(caller.uid),
+		privileges.users.isModerator(caller.uid, cid),
+	]);
+
+	if (!isAdmin && !isModerator) {
+		throw new Error('[[error:no-privileges]]');
+	}
+
+	const postData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed']);
+	if (!postData.isEndorsed) {
+		throw new Error('[[error:post-not-endorsed]]');
+	}
+
+	await posts.setPostFields(data.pid, {
+		isEndorsed: 0, // Store as 0 instead of false for Redis compatibility
+		endorsedBy: null,
+		endorsedAt: null,
+	});
+
+	const returnData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed', 'endorsedBy', 'endorsedAt']);
+
+	websockets.in(`topic_${postData.tid}`).emit('event:post_unendorsed', returnData);
+
+	await events.log({
+		type: 'post-unendorse',
+		uid: caller.uid,
+		pid: data.pid,
+		tid: postData.tid,
+		ip: caller.ip,
+	});
+
+	return returnData;
+};
+
 async function diffsPrivilegeCheck(pid, uid) {
 	const [deleted, privilegesData] = await Promise.all([
 		posts.getPostField(pid, 'deleted'),
