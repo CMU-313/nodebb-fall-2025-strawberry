@@ -53,21 +53,20 @@ get:
                   topics:
                     type: array
                     items:
-                      allOf:
-                        - type: object
-                          properties:
-                            tid:
-                              type: number
-                              description: topic id
-                            uid:
-                              type: number
-                              description: user id of topic creator
-                            cid:
-                              type: number
-                              description: category id
-                            title:
-                              type: string
-                              description: topic title
-                            slug:
-                              type: string
-                              description: topic slug
+                      type: object
+                      properties:
+                        tid:
+                          type: number
+                          description: topic id
+                        uid:
+                          type: number
+                          description: user id of topic creator
+                        cid:
+                          type: number
+                          description: category id
+                        title:
+                          type: string
+                          description: topic title
+                        slug:
+                          type: string
+                          description: topic slug
