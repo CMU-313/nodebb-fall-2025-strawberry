@@ -118,6 +118,9 @@ get:
                                             cid:
                                               type: number
                                               description: A category identifier
+                                            endorsed:
+                                              type: number
+                                              description: Whether the post has been endorsed by a staff member (1 for endorsed, 0 for not endorsed)
                                             topic:
                                               type: object
                                               properties:
@@ -187,6 +190,9 @@ get:
                                   cid:
                                     type: number
                                     description: A category identifier
+                                  endorsed:
+                                    type: number
+                                    description: Whether the post has been endorsed by a staff member (1 for endorsed, 0 for not endorsed)
                                   topic:
                                     type: object
                                     properties:
