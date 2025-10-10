@@ -1,0 +1,73 @@
+get:
+  tags:
+    - topics
+  summary: search topics by title with fuzzy matching
+  description: Search for topics by title keywords with optional fuzzy matching for typos
+  parameters:
+    - in: query
+      name: q
+      schema:
+        type: string
+      description: Search query string (can be a single keyword or multiple keywords)
+      example: welcome
+    - in: query
+      name: keywords
+      schema:
+        type: string
+      description: Alternative parameter name for search keywords
+      example: nodebb forum
+    - in: query
+      name: start
+      schema:
+        type: integer
+        default: 0
+      description: Start index for pagination
+      example: 0
+    - in: query
+      name: stop
+      schema:
+        type: integer
+        default: 19
+      description: Stop index for pagination
+      example: 19
+    - in: query
+      name: fuzzy
+      schema:
+        type: boolean
+        default: false
+      description: Enable fuzzy matching to find topics with typos
+      example: true
+  responses:
+    '200':
+      description: Topics matching the search query
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                $ref: ../../components/schemas/Status.yaml#/Status
+              response:
+                type: object
+                properties:
+                  topics:
+                    type: array
+                    items:
+                      allOf:
+                        - type: object
+                          properties:
+                            tid:
+                              type: number
+                              description: topic id
+                            uid:
+                              type: number
+                              description: user id of topic creator
+                            cid:
+                              type: number
+                              description: category id
+                            title:
+                              type: string
+                              description: topic title
+                            slug:
+                              type: string
+                              description: topic slug
