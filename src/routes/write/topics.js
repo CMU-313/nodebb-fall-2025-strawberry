@@ -14,6 +14,8 @@ module.exports = function () {
 	const multipartMiddleware = multipart();
 
 	setupApiRoute(router, 'post', '/', [middleware.checkRequired.bind(null, ['cid', 'title', 'content'])], controllers.write.topics.create);
+	// Ensure /search is registered before /:tid so it isn't captured by the :tid param
+	setupApiRoute(router, 'get', '/search', [], controllers.write.topics.searchByKeywords);
 	setupApiRoute(router, 'get', '/:tid', [], controllers.write.topics.get);
 	setupApiRoute(router, 'post', '/:tid', [middleware.checkRequired.bind(null, ['content']), middleware.assert.topic], controllers.write.topics.reply);
 	setupApiRoute(router, 'delete', '/:tid', [...middlewares], controllers.write.topics.purge);
