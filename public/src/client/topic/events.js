@@ -259,5 +259,53 @@ define('forum/topic/events', [
 		}
 	}
 
+	socket.on('event:post_endorsed', function (data) {
+		const postEl = components.get('post', 'pid', data.pid);
+		if (postEl.length) {
+			postEl.addClass('endorsed');
+			postEl.attr('data-isendorsed', 'true');
+
+			// Update the post data in ajaxify.data.posts if it exists
+			if (ajaxify.data && ajaxify.data.posts) {
+				const postIndex = ajaxify.data.posts.findIndex(p => String(p.pid) === String(data.pid));
+				if (postIndex !== -1) {
+					ajaxify.data.posts[postIndex].isEndorsed = true;
+					ajaxify.data.posts[postIndex].display_endorse_tools = true;
+				}
+			}
+
+			// Update button visibility in any open menu for this post
+			const menu = postEl.find('.dropdown-menu');
+			if (menu.length && menu.is(':visible')) {
+				menu.find('[component="post/endorse"]').parent().hide();
+				menu.find('[component="post/unendorse"]').parent().show();
+			}
+		}
+	});
+
+	socket.on('event:post_unendorsed', function (data) {
+		const postEl = components.get('post', 'pid', data.pid);
+		if (postEl.length) {
+			postEl.removeClass('endorsed');
+			postEl.attr('data-isendorsed', 'false');
+
+			// Update the post data in ajaxify.data.posts if it exists
+			if (ajaxify.data && ajaxify.data.posts) {
+				const postIndex = ajaxify.data.posts.findIndex(p => String(p.pid) === String(data.pid));
+				if (postIndex !== -1) {
+					ajaxify.data.posts[postIndex].isEndorsed = false;
+					ajaxify.data.posts[postIndex].display_endorse_tools = true;
+				}
+			}
+
+			// Update button visibility in any open menu for this post
+			const menu = postEl.find('.dropdown-menu');
+			if (menu.length && menu.is(':visible')) {
+				menu.find('[component="post/unendorse"]').parent().hide();
+				menu.find('[component="post/endorse"]').parent().show();
+			}
+		}
+	});
+
 	return Events;
 });

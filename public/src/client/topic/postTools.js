@@ -289,6 +289,18 @@ define('forum/topic/postTools', [
 		postContainer.on('click', '[component="post/chat"]', function () {
 			openChat($(this));
 		});
+
+		postContainer.on('click', '[component="post/endorse"]', function () {
+			const button = $(this);
+			const pid = getData(button, 'data-pid');
+			endorsePost(button, pid);
+		});
+
+		postContainer.on('click', '[component="post/unendorse"]', function () {
+			const button = $(this);
+			const pid = getData(button, 'data-pid');
+			unendorsePost(button, pid);
+		});
 	}
 
 	async function onReplyClicked(button, tid) {
@@ -383,6 +395,66 @@ define('forum/topic/postTools', [
 			hooks.fire(`action:post.${type}`, { pid: pid });
 		});
 		return false;
+	}
+
+	function endorsePost(button, pid) {
+		api.post(`/posts/${encodeURIComponent(pid)}/endorse`, undefined, function (err) {
+			if (err) {
+				return alerts.error(err);
+			}
+
+			const postEl = components.get('post', 'pid', pid);
+			postEl.addClass('endorsed');
+			postEl.attr('data-isendorsed', 'true');
+
+			// Update the post data in ajaxify.data.posts if it exists
+			if (ajaxify.data && ajaxify.data.posts) {
+				const postIndex = ajaxify.data.posts.findIndex(p => String(p.pid) === String(pid));
+				if (postIndex !== -1) {
+					ajaxify.data.posts[postIndex].isEndorsed = true;
+					ajaxify.data.posts[postIndex].display_endorse_tools = true;
+				}
+			}
+
+			// Update button visibility immediately in the current menu
+			const menu = button.closest('.dropdown-menu');
+			if (menu.length) {
+				menu.find('[component="post/endorse"]').parent().hide();
+				menu.find('[component="post/unendorse"]').parent().show();
+			}
+
+			alerts.success('[[topic:post-endorsed]]');
+		});
+	}
+
+	function unendorsePost(button, pid) {
+		api.delete(`/posts/${encodeURIComponent(pid)}/endorse`, undefined, function (err) {
+			if (err) {
+				return alerts.error(err);
+			}
+
+			const postEl = components.get('post', 'pid', pid);
+			postEl.removeClass('endorsed');
+			postEl.attr('data-isendorsed', 'false');
+
+			// Update the post data in ajaxify.data.posts if it exists
+			if (ajaxify.data && ajaxify.data.posts) {
+				const postIndex = ajaxify.data.posts.findIndex(p => String(p.pid) === String(pid));
+				if (postIndex !== -1) {
+					ajaxify.data.posts[postIndex].isEndorsed = false;
+					ajaxify.data.posts[postIndex].display_endorse_tools = true;
+				}
+			}
+
+			// Update button visibility immediately in the current menu
+			const menu = button.closest('.dropdown-menu');
+			if (menu.length) {
+				menu.find('[component="post/unendorse"]').parent().hide();
+				menu.find('[component="post/endorse"]').parent().show();
+			}
+
+			alerts.success('[[topic:post-unendorsed]]');
+		});
 	}
 
 	function getData(button, data) {
