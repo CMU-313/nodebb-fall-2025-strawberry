@@ -509,6 +509,9 @@ postsAPI.endorse = async function (caller, data) {
 
 	const returnData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed', 'endorsedBy', 'endorsedAt']);
 
+	// Convert isEndorsed to boolean for API response
+	returnData.isEndorsed = !!(returnData.isEndorsed && returnData.isEndorsed !== '0' && returnData.isEndorsed !== 'false');
+
 	websockets.in(`topic_${postData.tid}`).emit('event:post_endorsed', returnData);
 
 	await events.log({
@@ -552,6 +555,9 @@ postsAPI.unendorse = async function (caller, data) {
 	});
 
 	const returnData = await posts.getPostFields(data.pid, ['pid', 'tid', 'isEndorsed', 'endorsedBy', 'endorsedAt']);
+
+	// Convert isEndorsed to boolean for API response
+	returnData.isEndorsed = !!(returnData.isEndorsed && returnData.isEndorsed !== '0' && returnData.isEndorsed !== 'false');
 
 	websockets.in(`topic_${postData.tid}`).emit('event:post_unendorsed', returnData);
 

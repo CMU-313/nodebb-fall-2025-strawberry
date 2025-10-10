@@ -1,0 +1,116 @@
+post:
+  tags:
+    - posts
+  summary: endorse a post
+  description: This operation allows staff members (administrators and moderators) to endorse a post.
+  parameters:
+    - in: path
+      name: pid
+      schema:
+        type: string
+      required: true
+      description: a valid post id
+      example: 2
+  responses:
+    '200':
+      description: Post successfully endorsed
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                $ref: ../../../components/schemas/Status.yaml#/Status
+              response:
+                type: object
+                properties:
+                  pid:
+                    type: number
+                    description: The post ID
+                    example: 2
+                  tid:
+                    type: number
+                    description: The topic ID
+                    example: 1
+                  isEndorsed:
+                    type: boolean
+                    description: Whether the post is endorsed
+                    example: true
+                  endorsedBy:
+                    type: number
+                    description: User ID of the staff member who endorsed the post
+                    example: 1
+                  endorsedAt:
+                    type: number
+                    description: Timestamp when the post was endorsed
+                    example: 1697123456789
+    '403':
+      description: Not authorized to endorse posts
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                $ref: ../../../components/schemas/Status.yaml#/Status
+              response:
+                type: object
+                properties: {}
+delete:
+  tags:
+    - posts
+  summary: unendorse a post
+  description: This operation allows staff members (administrators and moderators) to remove an endorsement from a post.
+  parameters:
+    - in: path
+      name: pid
+      schema:
+        type: string
+      required: true
+      description: a valid post id
+      example: 2
+  responses:
+    '200':
+      description: Post successfully unendorsed
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                $ref: ../../../components/schemas/Status.yaml#/Status
+              response:
+                type: object
+                properties:
+                  pid:
+                    type: number
+                    description: The post ID
+                    example: 2
+                  tid:
+                    type: number
+                    description: The topic ID
+                    example: 1
+                  isEndorsed:
+                    type: boolean
+                    description: Whether the post is endorsed
+                    example: false
+                  endorsedBy:
+                    type: number
+                    description: User ID who originally endorsed (null when unendorsed)
+                    example: null
+                  endorsedAt:
+                    type: number
+                    description: Timestamp when originally endorsed (null when unendorsed)
+                    example: null
+    '403':
+      description: Not authorized to unendorse posts
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                $ref: ../../../components/schemas/Status.yaml#/Status
+              response:
+                type: object
+                properties: {}
