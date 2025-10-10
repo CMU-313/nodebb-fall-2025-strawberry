@@ -9,6 +9,10 @@ describe('Topics.getTopicsByTitleKeywords', function () {
 	let Topics;
 	let db;
 	let privileges;
+	let originalGetSortedSetRevRange;
+	let originalFilterTids;
+	let originalGetTopicsFields;
+	let originalGetTopicsByTids;
 
 	beforeEach(function () {
 		// require fresh copy
@@ -17,17 +21,39 @@ describe('Topics.getTopicsByTitleKeywords', function () {
 		db = require('../src/database');
 		privileges = require('../src/privileges');
 
+		// Save original functions
+		originalGetSortedSetRevRange = db.getSortedSetRevRange;
+		originalFilterTids = privileges.topics.filterTids;
+		originalGetTopicsFields = Topics.getTopicsFields;
+		originalGetTopicsByTids = Topics.getTopicsByTids;
+
 		// lightweight stub to avoid heavy downstream loading
 		Topics.getTopicsByTids = async function (tids) {
 			return tids.map(tid => ({ tid }));
 		};
 	});
 
+	afterEach(function () {
+		// Restore original functions to prevent test pollution
+		if (originalGetSortedSetRevRange) {
+			db.getSortedSetRevRange = originalGetSortedSetRevRange;
+		}
+		if (originalFilterTids && privileges.topics) {
+			privileges.topics.filterTids = originalFilterTids;
+		}
+		if (originalGetTopicsFields) {
+			Topics.getTopicsFields = originalGetTopicsFields;
+		}
+		if (originalGetTopicsByTids) {
+			Topics.getTopicsByTids = originalGetTopicsByTids;
+		}
+	});
+
 	it('returns matching topics with strict matching', async function () {
 		// stub db and privileges
 		const tids = [1, 2, 3];
 		db.getSortedSetRevRange = async () => tids;
-		privileges.topics = { filterTids: async () => tids };
+		privileges.topics.filterTids = async () => tids;
 		Topics.getTopicsFields = async () => [
 			{ tid: 1, title: 'Hello World' },
 			{ tid: 2, title: 'Fuzzy Search' },
@@ -45,7 +71,7 @@ describe('Topics.getTopicsByTitleKeywords', function () {
 	it('returns matching topics with fuzzy matching', async function () {
 		const tids = [1, 2];
 		db.getSortedSetRevRange = async () => tids;
-		privileges.topics = { filterTids: async () => tids };
+		privileges.topics.filterTids = async () => tids;
 		Topics.getTopicsFields = async () => [
 			{ tid: 1, title: 'NodeBB Forum' },
 			{ tid: 2, title: 'JavaScript Tutorial' },
