@@ -47,17 +47,17 @@ describe('Topics.getTopicsByTitleKeywords', function () {
 		db.getSortedSetRevRange = async () => tids;
 		privileges.topics = { filterTids: async () => tids };
 		Topics.getTopicsFields = async () => [
-			{ tid: 1, title: 'Nodebb' },
-			{ tid: 2, title: 'Nodabb' },
+			{ tid: 1, title: 'NodeBB Forum' },
+			{ tid: 2, title: 'JavaScript Tutorial' },
 		];
 
-		// misspelled query 'Nodb' should fuzzy match
-		const resStrict = await Topics.getTopicsByTitleKeywords(1, 'Nodb', 0, 10, false);
+		// misspelled query 'NodeBB' -> 'NodBB' (missing 'e') should fuzzy match
+		const resStrict = await Topics.getTopicsByTitleKeywords(1, 'NodBB', 0, 10, false);
 		assert(Array.isArray(resStrict));
 		// strict shouldn't match
 		assert.strictEqual(resStrict.length, 0);
 
-		const resFuzzy = await Topics.getTopicsByTitleKeywords(1, 'Nodb', 0, 10, true);
+		const resFuzzy = await Topics.getTopicsByTitleKeywords(1, 'NodBB', 0, 10, true);
 		assert(Array.isArray(resFuzzy));
 		assert(resFuzzy.length >= 1);
 	});
