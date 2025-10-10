@@ -129,6 +129,10 @@ define('forum/topic/postTools', [
 			return bookmarkPost($(this), getData($(this), 'data-pid'));
 		});
 
+		postContainer.on('change', '[component="post/endorse"]', function () {
+			return endorsePost($(this), getData($(this), 'data-pid'));
+		});
+
 		postContainer.on('click', '[component="post/upvote"]', function () {
 			return votes.toggleVote($(this), '.upvoted', 1);
 		});
@@ -380,6 +384,38 @@ define('forum/topic/postTools', [
 				return alerts.error(err);
 			}
 			const type = method === 'put' ? 'bookmark' : 'unbookmark';
+			hooks.fire(`action:post.${type}`, { pid: pid });
+		});
+		return false;
+	}
+
+	function endorsePost(checkbox, pid) {
+		const isChecked = checkbox.is(':checked');
+		const method = isChecked ? 'put' : 'del';
+
+		api[method](`/posts/${encodeURIComponent(pid)}/endorse`, undefined, function (err) {
+			if (err) {
+				alerts.error(err);
+				// Revert checkbox state on error
+				checkbox.prop('checked', !isChecked);
+				return;
+			}
+
+			const postEl = checkbox.parents('[data-pid]');
+			const badge = postEl.find('[component="post/endorsed-badge"]');
+
+			if (isChecked) {
+				// Add endorsed badge if it doesn't exist
+				if (!badge.length) {
+					const badgeHtml = '<span class="badge bg-success rounded-1" component="post/endorsed-badge"><i class="fa fa-check-circle"></i> Endorsed</span>';
+					postEl.find('.post-header .d-flex.gap-1.flex-wrap').append(badgeHtml);
+				}
+			} else {
+				// Remove endorsed badge
+				badge.remove();
+			}
+
+			const type = isChecked ? 'endorse' : 'unendorse';
 			hooks.fire(`action:post.${type}`, { pid: pid });
 		});
 		return false;

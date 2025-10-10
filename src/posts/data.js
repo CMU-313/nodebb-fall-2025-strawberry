@@ -7,7 +7,7 @@ const utils = require('../utils');
 const intFields = [
 	'uid', 'pid', 'tid', 'deleted', 'timestamp',
 	'upvotes', 'downvotes', 'deleterUid', 'edited',
-	'replies', 'bookmarks', 'announces', 'isAnonymous',
+	'replies', 'bookmarks', 'announces', 'isAnonymous', 'endorsed',
 ];
 
 module.exports = function (Posts) {
@@ -69,6 +69,10 @@ function modifyPost(post, fields) {
 		}
 		if (!fields.length || fields.includes('attachments')) {
 			post.attachments = (post.attachments || '').split(',').filter(Boolean);
+		}
+		// Default endorsed to 0 if not set
+		if (!post.hasOwnProperty('endorsed')) {
+			post.endorsed = 0;
 		}
 	}
 }
