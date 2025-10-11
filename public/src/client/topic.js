@@ -1,12 +1,12 @@
 'use strict';
 
-
 define('forum/topic', [
 	'forum/infinitescroll',
 	'forum/topic/threadTools',
 	'forum/topic/postTools',
 	'forum/topic/events',
 	'forum/topic/posts',
+	'forum/topic-search',
 	'navigator',
 	'sort',
 	'quickreply',
@@ -19,13 +19,113 @@ define('forum/topic', [
 	'clipboard',
 ], function (
 	infinitescroll, threadTools, postTools,
-	events, posts, navigator, sort, quickreply,
+	events, posts, TopicSearch, navigator, sort, quickreply,
 	components, storage, hooks, api, alerts,
 	bootbox, clipboard
 ) {
 	const Topic = {};
 	let tid = '0';
 	let currentUrl = '';
+
+	function setupFuzzySearch() {
+		const searchInput = $('#topic-search-input');
+		const fuzzyToggle = $('#fuzzy-search-toggle');
+		const sensitivitySlider = $('#fuzzy-sensitivity');
+		const sensitivityValue = $('.sensitivity-value');
+		const fuzzyWrapper = $('.fuzzy-sensitivity-wrapper');
+
+		// Load saved preferences
+		const savedPreferences = storage.getItem('fuzzy-search-preferences') || {
+			enabled: false,
+			sensitivity: 20,
+		};
+
+		fuzzyToggle.prop('checked', savedPreferences.enabled);
+		sensitivitySlider.val(savedPreferences.sensitivity);
+		sensitivityValue.text(savedPreferences.sensitivity);
+		fuzzyWrapper.toggle(savedPreferences.enabled);
+
+		// Handle toggle change
+		fuzzyToggle.on('change', function () {
+			fuzzyWrapper.toggle(this.checked);
+			savePreferences();
+			if (searchInput.val()) {
+				doSearch();
+			}
+		});
+
+		// Handle sensitivity change
+		sensitivitySlider.on('input', function () {
+			sensitivityValue.text(this.value);
+			savePreferences();
+			if (searchInput.val()) {
+				doSearch();
+			}
+		});
+
+		// Handle search input
+		let searchTimeout;
+		searchInput.on('input', function () {
+			clearTimeout(searchTimeout);
+			searchTimeout = setTimeout(doSearch, 250);
+		});
+
+		function savePreferences() {
+			storage.setItem('fuzzy-search-preferences', {
+				enabled: fuzzyToggle.prop('checked'),
+				sensitivity: parseInt(sensitivitySlider.val(), 10),
+			});
+		}
+
+		function doSearch() {
+			const query = searchInput.val().trim();
+			const fuzzyEnabled = fuzzyToggle.prop('checked');
+			const sensitivity = parseInt(sensitivitySlider.val(), 10);
+
+			if (!query) {
+				$('.topic-search-results').hide();
+				return;
+			}
+
+			socket.emit('posts.search', {
+				tid: ajaxify.data.tid,
+				term: query,
+				fuzzySearch: fuzzyEnabled,
+				fuzzySensitivity: sensitivity,
+			}, function (err, data) {
+				if (err) {
+					return app.alertError(err.message);
+				}
+
+				highlightMatches(query, fuzzyEnabled, sensitivity);
+				scrollToFirstMatch();
+			});
+		}
+
+		function highlightMatches(query, fuzzyEnabled, sensitivity) {
+			$('.post-content').find('.highlight').removeClass('highlight');
+			if (!query) return;
+
+			const regex = fuzzyEnabled ? 
+				new RegExp(query.split('').join('.*?'), 'gi') : 
+				new RegExp(query, 'gi');
+
+			$('.post-content').each(function () {
+				const $el = $(this);
+				const html = $el.html();
+				$el.html(html.replace(regex, '<span class="highlight">$&</span>'));
+			});
+		}
+
+		function scrollToFirstMatch() {
+			const firstMatch = $('.highlight').first();
+			if (firstMatch.length) {
+				$('html, body').animate({
+					scrollTop: firstMatch.offset().top - 100,
+				}, 500);
+			}
+		}
+	}
 
 	$(window).on('action:ajaxify.start', function (ev, data) {
 		events.removeListeners();
@@ -37,7 +137,7 @@ define('forum/topic', [
 		}
 	});
 
-	Topic.init = async function () {
+	Topic.init = function () {
 		const tidChanged = tid === '0' || String(tid) !== String(ajaxify.data.tid);
 		tid = String(ajaxify.data.tid);
 		currentUrl = ajaxify.currentPage;
@@ -48,12 +148,15 @@ define('forum/topic', [
 		if (tidChanged) {
 			posts.signaturesShown = {};
 		}
-		await posts.onTopicPageLoad(components.get('post'));
-		navigator.init('[component="topic"]>[component="post"]', ajaxify.data.postcount, Topic.toTop, Topic.toBottom, Topic.navigatorCallback);
 
-		postTools.init(tid);
-		threadTools.init(tid, $('.topic'));
-		events.init();
+		setupFuzzySearch();
+
+		posts.onTopicPageLoad(components.get('post')).then(() => {
+			navigator.init('[component="topic"]>[component="post"]', ajaxify.data.postcount, Topic.toTop, Topic.toBottom, Topic.navigatorCallback);
+			postTools.init(tid);
+			threadTools.init(tid, $('.topic'));
+			events.init();
+		});
 
 		sort.handleSort('topicPostSort', 'topic/' + ajaxify.data.slug);
 

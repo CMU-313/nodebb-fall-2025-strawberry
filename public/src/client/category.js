@@ -11,7 +11,11 @@ define('forum/category', [
 	'alerts',
 	'api',
 	'clipboard',
-], function (infinitescroll, share, navigator, topicList, sort, categorySelector, hooks, alerts, api, clipboard) {
+	'forum/topic-search',
+], function (
+	infinitescroll, share, navigator, topicList, sort,
+	categorySelector, hooks, alerts, api, clipboard, TopicSearch
+) {
 	const Category = {};
 
 	$(window).on('action:ajaxify.start', function (ev, data) {
@@ -20,12 +24,88 @@ define('forum/category', [
 		}
 	});
 
+	function setupFuzzySearch(cid) {
+		const searchInput = $('#topic-search-input');
+		const fuzzyToggle = $('#fuzzy-search-toggle');
+		const sensitivitySlider = $('#fuzzy-sensitivity');
+		const sensitivityValue = $('.sensitivity-value');
+		const fuzzyWrapper = $('.fuzzy-sensitivity-wrapper');
+
+		// Load saved preferences
+		const savedPreferences = storage.getItem('fuzzy-search-preferences') || {
+			enabled: false,
+			sensitivity: 20,
+		};
+
+		fuzzyToggle.prop('checked', savedPreferences.enabled);
+		sensitivitySlider.val(savedPreferences.sensitivity);
+		sensitivityValue.text(savedPreferences.sensitivity);
+		fuzzyWrapper.toggle(savedPreferences.enabled);
+
+		// Handle toggle change
+		fuzzyToggle.on('change', function () {
+			fuzzyWrapper.toggle(this.checked);
+			savePreferences();
+			if (searchInput.val()) {
+				doSearch();
+			}
+		});
+
+		// Handle sensitivity change
+		sensitivitySlider.on('input', function () {
+			sensitivityValue.text(this.value);
+			savePreferences();
+			if (searchInput.val()) {
+				doSearch();
+			}
+		});
+
+		// Handle search input
+		let searchTimeout;
+		searchInput.on('input', function () {
+			clearTimeout(searchTimeout);
+			searchTimeout = setTimeout(doSearch, 250);
+		});
+
+		function savePreferences() {
+			storage.setItem('fuzzy-search-preferences', {
+				enabled: fuzzyToggle.prop('checked'),
+				sensitivity: parseInt(sensitivitySlider.val(), 10),
+			});
+		}
+
+		function doSearch() {
+			const query = searchInput.val().trim();
+			const fuzzyEnabled = fuzzyToggle.prop('checked');
+			const sensitivity = parseInt(sensitivitySlider.val(), 10);
+
+			if (!query) {
+				loadTopicsAfter(0);
+				return;
+			}
+
+			socket.emit('topics.search', {
+				query: query,
+				cid: cid,
+				fuzzySearch: fuzzyEnabled,
+				fuzzySensitivity: sensitivity,
+			}, function (err, data) {
+				if (err) {
+					return app.alertError(err.message);
+				}
+				
+				topicList.onTopicsLoaded('category', data.topics);
+			});
+		}
+	}
+
 	Category.init = function () {
 		const cid = ajaxify.data.cid;
 
 		app.enterRoom('category_' + cid);
 
 		topicList.init('category', loadTopicsAfter);
+		setupFuzzySearch(cid);
 
 		sort.handleSort('categoryTopicSort', 'category/' + ajaxify.data.slug);
 
