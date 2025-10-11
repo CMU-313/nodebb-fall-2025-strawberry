@@ -53,9 +53,39 @@ search.search = async function (data) {
 	return result;
 };
 
+function calculateFuzzySimilarity(str1, str2, sensitivity) {
+	if (!str1 || !str2) return 0;
+	
+	str1 = str1.toLowerCase();
+	str2 = str2.toLowerCase();
+	
+	const maxDistance = Math.floor(Math.max(str1.length, str2.length) * (sensitivity / 100));
+	const matrix = Array(str2.length + 1).fill(null)
+		.map(() => Array(str1.length + 1).fill(0));
+	
+	for (let i = 0; i <= str1.length; i++) matrix[0][i] = i;
+	for (let j = 0; j <= str2.length; j++) matrix[j][0] = j;
+	
+	for (let j = 1; j <= str2.length; j++) {
+		for (let i = 1; i <= str1.length; i++) {
+			const substitutionCost = str1[i - 1] === str2[j - 1] ? 0 : 1;
+			matrix[j][i] = Math.min(
+				matrix[j][i - 1] + 1,
+				matrix[j - 1][i] + 1,
+				matrix[j - 1][i - 1] + substitutionCost
+			);
+		}
+	}
+	
+	const distance = matrix[str2.length][str1.length];
+	return distance <= maxDistance;
+}
+
 async function searchInContent(data) {
 	data.uid = data.uid || 0;
-
+	data.fuzzySearch = data.fuzzySearch || false;
+	data.fuzzySensitivity = data.fuzzySensitivity || 20; // Default to 20% sensitivity
+	
 	const [searchCids, searchUids] = await Promise.all([
 		getSearchCids(data),
 		getSearchUids(data),
@@ -63,16 +93,37 @@ async function searchInContent(data) {
 
 	async function doSearch(type, searchIn) {
 		if (searchIn.includes(data.searchIn)) {
-			const result = await plugins.hooks.fire('filter:search.query', {
+			const hookData = {
 				index: type,
 				content: data.query,
 				matchWords: data.matchWords || 'all',
 				cid: searchCids,
 				uid: searchUids,
 				searchData: data,
+				fuzzySearch: data.fuzzySearch,
+				fuzzySensitivity: data.fuzzySensitivity,
 				ids: [],
-			});
-			return Array.isArray(result) ? result : result.ids;
+				calculateFuzzySimilarity: calculateFuzzySimilarity,
+			};
+
+			const result = await plugins.hooks.fire('filter:search.query', hookData);
+			const ids = Array.isArray(result) ? result : result.ids;
+
+			// Apply fuzzy search if enabled
+			if (data.fuzzySearch && ids && ids.length > 0) {
+				const content = data.query.toLowerCase();
+				return ids.filter((id) => {
+					if (type === 'post') {
+						const post = posts.cache.get(id);
+						return post && calculateFuzzySimilarity(content, post.content.toLowerCase(), data.fuzzySensitivity);
+					} else if (type === 'topic') {
+						const topic = topics.cache.get(id);
+						return topic && calculateFuzzySimilarity(content, topic.title.toLowerCase(), data.fuzzySensitivity);
+					}
+					return true;
+				});
+			}
+			return ids;
 		}
 		return [];
 	}
