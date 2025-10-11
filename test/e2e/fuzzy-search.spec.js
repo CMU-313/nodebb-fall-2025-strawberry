@@ -1,51 +1,72 @@
-// Playwright E2E test scaffold for fuzzy search flow
-// Note: This test requires Playwright and a running NodeBB instance accessible at http://localhost:4567
-// Install Playwright: npm i -D @playwright/test
-// Run with: npx playwright test test/e2e/fuzzy-search.spec.js
-
+// Playwright E2E test for fuzzy search
 const { test, expect } = require('@playwright/test');
 
-test.describe('Fuzzy topic search', () => {
+test.describe('Fuzzy search functionality', () => {
 	test('fuzzy toggle enables fuzzy matching', async ({ page }) => {
-		// Adjust URL as needed for your instance
-		await page.goto('http://localhost:4567/recent');
+		await page.goto('http://localhost:4567/search');
 
-		// Ensure search input exists
-		const searchInput = await page.waitForSelector('[component="topic/input"]', { timeout: 5000 });
-		// Type a misspelled query
-		await searchInput.fill('Nodb');
+		// Wait for search form to be ready
+		const searchForm = await page.waitForSelector('[component="search/form"]');
+		const searchInput = await searchForm.waitForSelector('input[name="query"]');
+		const fuzzyToggle = await page.waitForSelector('#search-fuzzy-toggle');
 
-		// Enable fuzzy toggle if not enabled
-		const toggle = await page.$('[component="topic/toggle"]');
-		if (toggle) {
-			const isSelected = await toggle.getAttribute('data-selected');
-			if (!isSelected || isSelected === '0' || isSelected === 'false') {
-				await toggle.click();
-			}
-		}
+		// Try searching with a misspelled word without fuzzy search
+		await searchInput.fill('Nodbb'); // Misspelling of NodeBB
+		await page.keyboard.press('Enter');
 
-		// Trigger search button
-		const searchBtn = await page.$('[component="topic/search"]');
-		await searchBtn.click();
+		// Wait for results and verify no exact matches
+		await page.waitForTimeout(1000); // Allow time for search results
+		const initialResults = await page.$$('[component="search/results"] .topic-title');
+		const initialTexts = await Promise.all(initialResults.map(r => r.textContent()));
+		const initialHasMatch = initialTexts.some(text => text.toLowerCase().includes('nodebb'));
+		expect(initialHasMatch).toBeFalsy();
 
-		// Wait for results to load and expect a topic that matches fuzzily
-		// This is application-specific; adjust selector for topic title and expected text
-		const topicSelector = '[component="category/topic"] .topic-title';
-		await page.waitForSelector(topicSelector, { timeout: 5000 });
-		const titles = await page.$$eval(topicSelector, els => els.map(e => e.textContent.trim()));
+		// Enable fuzzy search and adjust sensitivity
+		await fuzzyToggle.click();
+		const sensitivitySlider = await page.waitForSelector('#search-fuzzy-sensitivity');
+		await sensitivitySlider.fill('30');
 
-		// Expect at least one title contains 'Node' (from 'Nodebb' example)
-		expect(titles.some(t => /Node/i.test(t))).toBeTruthy();
+		// Search again with fuzzy enabled
+		await page.keyboard.press('Enter');
 
-		// Now disable fuzzy and expect that misspelled query yields no results (or fewer)
-		if (toggle) {
-			await toggle.click();
-		}
-		await searchBtn.click();
-		// small wait
-		await page.waitForTimeout(800);
-		const titlesAfter = await page.$$eval(topicSelector, els => els.map(e => e.textContent.trim()));
-		// Strict search should not match the misspelled term
-		expect(titlesAfter.some(t => /Node/i.test(t))).toBeFalsy();
+		// Should find "NodeBB" topics now
+		await page.waitForTimeout(1000);
+		const fuzzyResults = await page.$$('[component="search/results"] .topic-title');
+		const fuzzyTexts = await Promise.all(fuzzyResults.map(r => r.textContent()));
+		const fuzzyHasMatch = fuzzyTexts.some(text => text.toLowerCase().includes('nodebb'));
+		expect(fuzzyHasMatch).toBeTruthy();
+	});
+
+	test('fuzzy sensitivity affects match tolerance', async ({ page }) => {
+		await page.goto('http://localhost:4567/search');
+
+		// Setup search components
+		const searchForm = await page.waitForSelector('[component="search/form"]');
+		const searchInput = await searchForm.waitForSelector('input[name="query"]');
+		const fuzzyToggle = await page.waitForSelector('#search-fuzzy-toggle');
+		
+		// Enable fuzzy search
+		await fuzzyToggle.click();
+		const sensitivitySlider = await page.waitForSelector('#search-fuzzy-sensitivity');
+
+		// Test with low sensitivity (strict matching)
+		await sensitivitySlider.fill('10');
+		await searchInput.fill('Nodbb');
+		await page.keyboard.press('Enter');
+		
+		await page.waitForTimeout(1000);
+		const strictResults = await page.$$('[component="search/results"] .topic-title');
+		const strictMatchCount = strictResults.length;
+
+		// Test with high sensitivity (more lenient matching)
+		await sensitivitySlider.fill('50');
+		await page.keyboard.press('Enter');
+		
+		await page.waitForTimeout(1000);
+		const lenientResults = await page.$$('[component="search/results"] .topic-title');
+		const lenientMatchCount = lenientResults.length;
+
+		// Higher sensitivity should find more matches
+		expect(lenientMatchCount).toBeGreaterThan(strictMatchCount);
 	});
 });

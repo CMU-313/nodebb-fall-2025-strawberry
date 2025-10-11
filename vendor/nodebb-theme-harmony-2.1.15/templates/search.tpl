@@ -31,6 +31,16 @@
 					<option value="topics">[[search:show-results-as-topics]]</option>
 				</select>
 
+				<div class="form-check mb-3">
+					<input type="checkbox" class="form-check-input" id="search-fuzzy-toggle" name="fuzzySearch">
+					<label class="form-check-label" for="search-fuzzy-toggle">[[search:enable-fuzzy-search]]</label>
+				</div>
+
+				<div class="fuzzy-sensitivity-container" style="display: none;">
+					<label for="search-fuzzy-sensitivity" class="form-label text-sm">[[search:fuzzy-sensitivity]]: <span class="fuzzy-value">20</span>%</label>
+					<input type="range" class="form-range" id="search-fuzzy-sensitivity" name="fuzzySensitivity" value="20" min="0" max="100">
+				</div>
+
 				<button type="submit" class="btn btn-primary fw-semibold form-control py-2 px-3">[[global:search]]</button>
 			</form>
 		</div>
