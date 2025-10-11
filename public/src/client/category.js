@@ -11,10 +11,11 @@ define('forum/category', [
 	'alerts',
 	'api',
 	'clipboard',
+	'storage',
 	'forum/topic-search',
 ], function (
 	infinitescroll, share, navigator, topicList, sort,
-	categorySelector, hooks, alerts, api, clipboard, TopicSearch
+	categorySelector, hooks, alerts, api, clipboard, storage, TopicSearch
 ) {
 	const Category = {};
 
@@ -106,6 +107,10 @@ define('forum/category', [
 
 		topicList.init('category', loadTopicsAfter);
 		setupFuzzySearch(cid);
+		
+		if (TopicSearch && typeof TopicSearch.init === 'function') {
+			TopicSearch.init();
+		}
 
 		sort.handleSort('categoryTopicSort', 'category/' + ajaxify.data.slug);
 

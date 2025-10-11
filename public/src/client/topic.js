@@ -92,17 +92,17 @@ define('forum/topic', [
 				term: query,
 				fuzzySearch: fuzzyEnabled,
 				fuzzySensitivity: sensitivity,
-			}, function (err, data) {
+			}, function (err) {
 				if (err) {
 					return app.alertError(err.message);
 				}
 
-				highlightMatches(query, fuzzyEnabled, sensitivity);
+				highlightMatches(query, fuzzyEnabled);
 				scrollToFirstMatch();
 			});
 		}
 
-		function highlightMatches(query, fuzzyEnabled, sensitivity) {
+		function highlightMatches(query, fuzzyEnabled) {
 			$('.post-content').find('.highlight').removeClass('highlight');
 			if (!query) return;
 
