@@ -23,6 +23,7 @@ require('./recent')(Posts);
 require('./tools')(Posts);
 require('./votes')(Posts);
 require('./bookmarks')(Posts);
+require('./endorsements')(Posts);
 require('./queue')(Posts);
 require('./diffs')(Posts);
 require('./uploads')(Posts);
@@ -59,7 +60,7 @@ Posts.getPostsByPids = async function (pids, uid) {
 Posts.getPostSummariesFromSet = async function (set, uid, start, stop) {
 	let pids = await db.getSortedSetRevRange(set, start, stop);
 	pids = await privileges.posts.filter('topics:read', pids, uid);
-	const posts = await Posts.getPostSummaryByPids(pids, uid, { stripTags: false });
+	const posts = await Posts.getPostSummaryByPids(pids, uid, { stripTags: false, stripEndorsements: true });
 	return { posts: posts, nextStart: stop + 1 };
 };
 

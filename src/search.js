@@ -148,6 +148,7 @@ async function searchInContent(data) {
 
 	returnData.posts = await posts.getPostSummaryByPids(metadata.pids, data.uid, {
 		extraFields: ['attachments'],
+		stripEndorsements: true,
 	});
 	await plugins.hooks.fire('filter:search.contentGetResult', { result: returnData, data: data });
 	delete metadata.pids;
