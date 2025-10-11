@@ -108,7 +108,7 @@ async function getPosts(callerUid, userData, setSuffix) {
 				setSuffix,
 				pids,
 			}));
-			const p = await posts.getPostSummaryByPids(pids, callerUid, { stripTags: false });
+			const p = await posts.getPostSummaryByPids(pids, callerUid, { stripTags: false, stripEndorsements: true });
 			postData.push(...p.filter(
 				p => p && p.topic && (
 					isAdmin ||

@@ -62,7 +62,7 @@ postsAPI.getSummary = async (caller, { pid }) => {
 		return null;
 	}
 
-	const postsData = await posts.getPostSummaryByPids([pid], caller.uid, { stripTags: false });
+	const postsData = await posts.getPostSummaryByPids([pid], caller.uid, { stripTags: false, stripEndorsements: true });
 	posts.modifyPostByPrivilege(postsData[0], topicPrivileges);
 	return postsData[0];
 };
@@ -475,6 +475,14 @@ postsAPI.bookmark = async function (caller, data) {
 
 postsAPI.unbookmark = async function (caller, data) {
 	return await apiHelpers.postCommand(caller, 'unbookmark', 'bookmarked', '', data);
+};
+
+postsAPI.endorse = async function (caller, data) {
+	return await apiHelpers.postCommand(caller, 'endorse', 'endorsed', '', data);
+};
+
+postsAPI.unendorse = async function (caller, data) {
+	return await apiHelpers.postCommand(caller, 'unendorse', 'endorsed', '', data);
 };
 
 async function diffsPrivilegeCheck(pid, uid) {

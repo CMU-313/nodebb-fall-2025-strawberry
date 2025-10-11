@@ -133,7 +133,7 @@ module.exports = function (Posts) {
 	async function postDiffLoad(pid, since, uid) {
 		// Retrieves all diffs made since `since` and replays them to reconstruct what the post looked like at `since`
 		const [post, diffs] = await Promise.all([
-			Posts.getPostSummaryByPids([pid], uid, { parse: false, escape: true }),
+			Posts.getPostSummaryByPids([pid], uid, { parse: false, escape: true, stripEndorsements: true }),
 			Posts.diffs.get(pid, since),
 		]);
 

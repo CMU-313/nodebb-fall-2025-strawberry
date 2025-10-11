@@ -120,6 +120,12 @@ get:
                                               type: number
                                               description: The category identifier for the category that is the immediate
                                                 ancestor of the current category
+                                            endorsed:
+                                              type: boolean
+                                              description: Whether the post has been endorsed by staff
+                                            endorsements:
+                                              type: number
+                                              description: Number of endorsements the post has received
                                             topic:
                                               type: object
                                               properties:
@@ -189,6 +195,12 @@ get:
                                   cid:
                                     type: number
                                     description: A category identifier
+                                  endorsed:
+                                    type: boolean
+                                    description: Whether the post has been endorsed by staff
+                                  endorsements:
+                                    type: number
+                                    description: Number of endorsements the post has received
                                   topic:
                                     type: object
                                     properties:
