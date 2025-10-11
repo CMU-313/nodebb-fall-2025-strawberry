@@ -1,3 +1,4 @@
+/* topic-search client helper: toggles fuzzy mode and triggers a search with a fuzzy parameter */
 'use strict';
 
 define('forum/topic-search', ['components', 'api', 'hooks', 'storage'], function (components, api, hooks, storage) {
@@ -17,6 +18,7 @@ define('forum/topic-search', ['components', 'api', 'hooks', 'storage'], function
 			el.toggleClass('active', newSelected);
 		});
 
+		// Trigger a topic search — append fuzzy flag to available search form or call API
 		$(document).on('click', '[component="topic/search"]', function () {
 			var input = $('[component="topic/input"]');
 			var query = input.val();
@@ -33,10 +35,14 @@ define('forum/topic-search', ['components', 'api', 'hooks', 'storage'], function
 				return;
 			}
 
+			// call the new topics search API if available
 			api.get('/api/v3/topics/search', { q: query, fuzzy: fuzzy }).then(function (res) {
+				// normalize topics shape: support response.topics envelope and legacy shapes
 				var topics = (res && res.topics) || (res && res.response && res.response.topics) || res || [];
+				// fire a searching hook
 				hooks.fire('action:topic.search.results', { query: query, fuzzy: fuzzy, results: topics });
 				try {
+					// Render results into topic list similar to TopicList.onTopicsLoaded
 					var templateName = (ajaxify && ajaxify.data && ajaxify.data.template && ajaxify.data.template.name) ? ajaxify.data.template.name : 'recent';
 					var tplData = {
 						topics: Array.isArray(topics) ? topics : [],
@@ -45,10 +51,12 @@ define('forum/topic-search', ['components', 'api', 'hooks', 'storage'], function
 					};
 					tplData.template[templateName] = true;
 
+					// find topic list element (replicating TopicList.findTopicListElement)
 					var topicListEl = $('[component="category"]').filter(function (i, e) {
 						return !$(e).parents('[widget-area],[data-widget-area]').length;
 					});
 
+					// parse and render
 					if (window.app && typeof window.app.parseAndTranslate === 'function') {
 						window.app.parseAndTranslate(templateName, 'topics', tplData, function (html) {
 							topicListEl.empty();
@@ -61,6 +69,7 @@ define('forum/topic-search', ['components', 'api', 'hooks', 'storage'], function
 					// rendering failed, ignore — hook already fired
 				}
 			}).catch(function () {
+				// fallback: old topics endpoint
 				api.get('/topics', { query: query, fuzzy: fuzzy }).then(function (res) {
 					var topics = (res && res.topics) || (res && res.response && res.response.topics) || res || [];
 					hooks.fire('action:topic.search.results', { query: query, fuzzy: fuzzy, results: topics });
