@@ -73,7 +73,7 @@ describe('Anonymous Posting Internationalization', () => {
 		const translations = {
 			'en-US': 'Enable Anonymous Posting',
 			'en-GB': 'Enable Anonymous Posting',
-			'de': 'Anonyme Beiträge aktivieren'
+			'de': 'Anonyme Beiträge aktivieren',
 		};
 
 		Object.entries(translations).forEach(([lang, expectedTranslation]) => {
