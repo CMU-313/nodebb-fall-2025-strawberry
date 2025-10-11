@@ -10,13 +10,17 @@ define('forum/search', [
 	'translator',
 	'categoryFilter',
 	'userFilter',
-], function (searchModule, storage, hooks, alerts, api, translator, categoryFilter, userFilter) {
+	'forum/search/fuzzy',
+], function (searchModule, storage, hooks, alerts, api, translator, categoryFilter, userFilter, fuzzySearch) {
 	const Search = {};
 	let selectedUsers = [];
 	let selectedTags = [];
 	let selectedCids = [];
 	let searchFilters = {};
 	Search.init = function () {
+		// Initialize fuzzy search
+		fuzzySearch.init();
+
 		const searchIn = $('#search-in');
 		searchIn.on('change', function () {
 			updateFormItemVisiblity(searchIn.val());
