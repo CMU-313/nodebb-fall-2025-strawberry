@@ -3,7 +3,6 @@
 const db = require('../database');
 const user = require('../user');
 const plugins = require('../plugins');
-const privileges = require('../privileges');
 
 module.exports = function (Posts) {
 	Posts.endorse = async function (pid, uid) {

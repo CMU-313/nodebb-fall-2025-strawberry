@@ -55,18 +55,18 @@ module.exports = function (Posts) {
 			post.handle = undefined;
 			post.topic = tidToTopic[post.tid];
 			post.category = post.topic && cidToCategory[post.topic.cid];
-		post.isMainPost = post.topic && post.pid === post.topic.mainPid;
-		post.deleted = post.deleted === 1;
-		post.timestampISO = utils.toISOString(post.timestamp);
-		
-		// Handle anonymous posts - mask user information
-		post.isAnonymous = post.isAnonymous === 1;
-		
-		// Strip endorsements field if requested (for search API compatibility)
-		if (options.stripEndorsements) {
-			delete post.endorsements;
-			delete post.endorsed;
-		}
+			post.isMainPost = post.topic && post.pid === post.topic.mainPid;
+			post.deleted = post.deleted === 1;
+			post.timestampISO = utils.toISOString(post.timestamp);
+
+			// Handle anonymous posts - mask user information
+			post.isAnonymous = post.isAnonymous === 1;
+
+			// Strip endorsements field if requested (for search API compatibility)
+			if (options.stripEndorsements) {
+				delete post.endorsements;
+				delete post.endorsed;
+			}
 			if (post.isAnonymous && post.user) {
 				// Store original user data for internal use (admins/mods may need to see this)
 				post.originalUser = { ...post.user };
