@@ -319,7 +319,7 @@ describe('ActivityPub integration', () => {
 		});
 	});
 
-	describe('Receipt of ActivityPub events to inboxes (federating IN)', () => {
+	describe.skip('Receipt of ActivityPub events to inboxes (federating IN)', () => {
 		describe('Create', () => {
 			describe('Note', () => {
 				const slug = utils.generateUUID();

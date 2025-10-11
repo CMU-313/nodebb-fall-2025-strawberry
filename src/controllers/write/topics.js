@@ -220,3 +220,21 @@ Topics.move = async (req, res) => {
 
 	helpers.formatApiResponse(200, res);
 };
+
+// Search topics by title keywords (supports fuzzy matching)
+Topics.searchByKeywords = async (req, res) => {
+	const { q, keywords, start, stop, fuzzy } = req.query;
+	const rawKeywords = q || keywords || '';
+	const startNum = typeof start !== 'undefined' ? parseInt(start, 10) : 0;
+	const stopNum = typeof stop !== 'undefined' ? parseInt(stop, 10) : 50;
+	const useFuzzy = fuzzy === '1' || fuzzy === 'true' || fuzzy === 'on' || fuzzy === true;
+
+	try {
+		const topicsData = await topics.getTopicsByTitleKeywords(req.uid, rawKeywords, startNum, stopNum, useFuzzy);
+		// return in standard envelope
+		helpers.formatApiResponse(200, res, { topics: topicsData });
+	} catch (err) {
+		// propagate as 500
+		helpers.formatApiResponse(500, res, err);
+	}
+};
