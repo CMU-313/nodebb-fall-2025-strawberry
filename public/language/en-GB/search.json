@@ -1,4 +1,23 @@
 {
+	"title": "Recent",
+	"day": "Day",
+	"week": "Week",
+	"month": "Month",
+	"year": "Year",
+	"alltime": "All Time",
+	"no-recent-topics": "There are no recent topics.",
+	"no-popular-topics": "There are no popular topics.",
+	"load-new-posts": "Load new posts",
+
+	"search-topics": "Search topics by title",
+
+	"admin/settings/search:search": "Search",
+	"admin/settings/search:fuzzy-sensitivity": "Fuzzy Search Sensitivity", 
+	"admin/settings/search:fuzzy-sensitivity-help": "Enter a percentage (10-50) that controls how permissive fuzzy matching is. Higher values match more aggressively.",
+
+	"uncategorized.title": "All known topics",
+	"uncategorized.intro": "This page shows a chronological listing of every topic that this forum has received.<br />The views and opinions expressed in the topics below are not moderated and may not represent the views and opinions of this website.",
+
 	"type-to-search": "Type to search",
 	"results-matching": "%1 result(s) matching \"%2\", (%3 seconds)",
 	"no-matches": "No matches found",
