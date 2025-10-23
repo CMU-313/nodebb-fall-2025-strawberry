@@ -1,0 +1,25 @@
+
+=== Jalangi2 Analysis Summary ===
+Function calls: 0
+Variable declarations: 0
+Binary operations: 0
+Literals: 0
+================================
+
+/Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/install/node_modules/jalangi2/src/js/runtime/analysis.js:515
+            throw tmp;
+            ^
+
+ReferenceError: Cannot access 'path' before initialization
+    at Object.<anonymous> (/Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/src/constants.js:6:31)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Module._extensions..js (/Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/install/node_modules/jalangi2/src/js/commands/jalangi.js:109:12)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:170:5)
+    at startProgram (/Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/install/node_modules/jalangi2/src/js/commands/jalangi.js:121:19)
+    at Object.<anonymous> (/Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/install/node_modules/jalangi2/src/js/commands/jalangi.js:127:5)
+
+Node.js v22.13.1

@@ -75,3 +75,7 @@ test.sh
 
 .docker/**
 !**/.gitkeep
+
+# Jalangi2 instrumented files
+*_jalangi_.js
+*_jalangi_.json
