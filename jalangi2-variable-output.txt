@@ -1,0 +1,35 @@
+=== Testing Endorsement Feature ===
+Post 101 endorsed by user 1
+Post 101 endorsed by user 2
+Error: User 999 cannot endorse posts
+Post 101 endorsed: true
+Post 101 endorsement count: 2
+Post 101 unendorsed by user 1
+Post 101 endorsement count after unendorse: 1
+Post 102 endorsed by user 1
+Post 102 already endorsed by user 1
+=== End of Tests ===
+
+========== Variable Tracking Analysis ==========
+Total variable reads: 111
+Total variable writes: 8
+
+Most frequently read variables:
+  1. pid: 28 reads
+  2. uid: 26 reads
+  3. endorsements: 22 reads
+  4. console: 11 reads
+  5. canUserEndorse: 6 reads
+  6. staffUsers: 6 reads
+  7. endorsePost: 5 reads
+  8. getEndorsementCount: 3 reads
+  9. index: 2 reads
+  10. isPostEndorsed: 1 reads
+
+Most frequently written variables:
+  1. staffUsers: 6 writes
+  2. endorsements: 1 writes
+  3. index: 1 writes
+
+================================================
+

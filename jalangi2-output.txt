@@ -1,0 +1,29 @@
+=== Testing Endorsement Feature ===
+Post 101 endorsed by user 1
+Post 101 endorsed by user 2
+Error: User 999 cannot endorse posts
+Post 101 endorsed: true
+Post 101 endorsement count: 2
+Post 101 unendorsed by user 1
+Post 101 endorsement count after unendorse: 1
+Post 102 endorsed by user 1
+Post 102 already endorsed by user 1
+=== End of Tests ===
+
+========== Jalangi2 Analysis Results ==========
+Total function calls: 42
+
+Function call breakdown:
+Top 10 most called functions:
+  1. log: 11 calls
+  2. indexOf: 11 calls
+  3. canUserEndorse: 6 calls
+  4. endorsePost: 5 calls
+  5. push: 3 calls
+  6. getEndorsementCount: 3 calls
+  7. isPostEndorsed: 1 calls
+  8. unendorsePost: 1 calls
+  9. splice: 1 calls
+
+===============================================
+
