@@ -1,0 +1,63 @@
+src/file.js: line 1, col 1, Use the function form of "use strict".
+src/file.js: line 3, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 4, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 5, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 6, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 7, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 7, col 1, 'destructuring binding' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 8, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 9, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 10, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 12, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 16, col 1, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 18, col 24, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 22, col 45, 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 24, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 29, col 21, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 37, col 14, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 37, col 42, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 42, col 22, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 43, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 54, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 62, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 63, col 5, 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 68, col 73, 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 71, col 25, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 83, col 15, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 108, col 15, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 116, col 29, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 124, col 13, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 136, col 17, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 141, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 146, col 5, 'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 148, col 21, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 154, col 13, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 155, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 156, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 156, col 49, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 156, col 62, 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 157, col 9, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 160, col 30, 'arrow function syntax (=>)' is only available in ES6 (use 'esversion: 6').
+src/file.js: line 163, col 1, 'async functions' is only available in ES8 (use 'esversion: 8').
+src/file.js: line 164, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 165, col 5, 'const' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+src/file.js: line 3, col 12, 'require' is not defined.
+src/file.js: line 4, col 15, 'require' is not defined.
+src/file.js: line 5, col 14, 'require' is not defined.
+src/file.js: line 6, col 17, 'require' is not defined.
+src/file.js: line 7, col 20, 'require' is not defined.
+src/file.js: line 8, col 14, 'require' is not defined.
+src/file.js: line 9, col 18, 'require' is not defined.
+src/file.js: line 10, col 22, 'require' is not defined.
+src/file.js: line 12, col 17, 'require' is not defined.
+src/file.js: line 62, col 18, 'require' is not defined.
+src/file.js: line 198, col 1, 'require' is not defined.
+src/file.js: line 16, col 14, 'module' is not defined.
+src/file.js: line 43, col 20, 'Buffer' is not defined.
+src/file.js: line 125, col 21, 'process' is not defined.
+src/file.js: line 129, col 9, 'process' is not defined.
+src/file.js: line 137, col 21, 'process' is not defined.
+src/file.js: line 141, col 19, 'process' is not defined.
+src/file.js: line 156, col 25, 'Promise' is not defined.
+
+61 errors
