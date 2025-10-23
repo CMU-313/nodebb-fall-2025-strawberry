@@ -1,0 +1,61 @@
+JALANGI2 INSTRUMENTED CODE SAMPLE
+===================================
+
+This file demonstrates how Jalangi2 instruments JavaScript code for dynamic analysis.
+
+ORIGINAL CODE (test-sample.js):
+-------------------------------
+
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+
+INSTRUMENTED CODE (test-sample_jalangi_.js):
+-------------------------------------------
+
+function fibonacci(n) {
+    jalangiLabel0:
+        while (true) {
+            try {
+                J$.Fe(129, arguments.callee, this, arguments);
+                arguments = J$.N(137, 'arguments', arguments, 4);
+                n = J$.N(145, 'n', n, 4);
+                if (J$.X1(745, J$.C(8, J$.B(10, '<=', J$.R(9, 'n', n, 0), J$.T(17, 1, 22, false), 0)))) {
+                    return J$.X1(41, J$.Rt(33, J$.R(25, 'n', n, 0)));
+                }
+                return J$.X1(121, J$.Rt(113, J$.B(34, '+', J$.F(73, J$.R(49, 'fibonacci', fibonacci, 1), 0)(J$.B(18, '-', J$.R(57, 'n', n, 0), J$.T(65, 1, 22, false), 0)), J$.F(105, J$.R(81, 'fibonacci', fibonacci, 1), 0)(J$.B(26, '-', J$.R(89, 'n', n, 0), J$.T(97, 2, 22, false), 0)), 0)));
+            } catch (J$e) {
+                J$.Ex(753, J$e);
+            } finally {
+                if (J$.Fr(761))
+                    continue jalangiLabel0;
+                else
+                    return J$.Ra();
+            }
+        }
+}
+
+INSTRUMENTATION FEATURES:
+-------------------------
+
+1. J$.Fe() - Function entry tracking
+2. J$.N() - Variable/argument name tracking
+3. J$.R() - Variable read tracking
+4. J$.B() - Binary operation tracking
+5. J$.F() - Function call tracking
+6. J$.Rt() - Return value tracking
+7. J$.X1() - Expression tracking
+8. J$.C() - Conditional tracking
+
+GENERATED FILES:
+----------------
+
+When Jalangi2 instruments code, it generates:
+- *_jalangi_.js - Instrumented JavaScript code
+- *_jalangi_.json - Metadata about instrumentation points (IIDs)
+
+These files enable dynamic analysis by wrapping all JavaScript operations
+with tracking calls that report to the analysis module.

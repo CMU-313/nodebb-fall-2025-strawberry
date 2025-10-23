@@ -1,0 +1,67 @@
+NPM INSTALL COMMAND OUTPUT
+==========================
+
+Command: npm install jalangi2 --save-dev
+
+Working Directory: /Users/michelleguo/Desktop/17313/nodebb-fall-2025-strawberry/install
+
+Output:
+-------
+
+added 1416 packages, and audited 1420 packages in 51s
+
+244 packages are looking for funding
+  run `npm fund` for details
+
+26 vulnerabilities (4 low, 13 moderate, 2 high, 7 critical)
+
+To address issues that do not require attention, run:
+  npm audit fix
+
+To address all issues possible (including breaking changes), run:
+  npm audit fix --force
+
+Some issues need review, and may require choosing
+a different dependency.
+
+Run `npm audit` for details.
+
+PACKAGE.JSON MODIFICATION
+=========================
+
+Location: install/package.json
+
+Change:
+-------
+Added to devDependencies section:
+"jalangi2": "^0.2.6"
+
+Git Diff:
+---------
++        "jalangi2": "^0.2.6",
+         "jsdom": "26.1.0",
+         "lint-staged": "16.0.0",
+         "mocha": "11.2.2",
+
+NODE_MODULES VERIFICATION
+=========================
+
+Command: ls -la install/node_modules/jalangi2
+
+Output:
+-------
+total 72
+drwxr-xr-x   12 michelleguo  staff    384 Oct 23 17:05 .
+drwxr-xr-x  990 michelleguo  staff  31680 Oct 23 17:05 ..
+-rw-r--r--    1 michelleguo  staff    501 Oct 23 17:05 conf.json
+drwxr-xr-x   12 michelleguo  staff    384 Oct 23 17:05 docs
+-rwxr-xr-x    1 michelleguo  staff    308 Oct 23 17:05 generatedocs.sh
+-rw-r--r--    1 michelleguo  staff  11358 Oct 23 17:05 LICENSE.txt
+drwxr-xr-x    9 michelleguo  staff    288 Oct 23 17:05 node_modules
+drwxr-xr-x    4 michelleguo  staff    128 Oct 23 17:05 node_test
+-rw-r--r--    1 michelleguo  staff    923 Oct 23 17:05 package.json
+-rw-r--r--    1 michelleguo  staff   9600 Oct 23 17:05 README.md
+drwxr-xr-x   19 michelleguo  staff    608 Oct 23 17:05 scripts
+drwxr-xr-x    5 michelleguo  staff    160 Oct 23 17:05 src
+
+Installation Date: October 23, 2025, 5:05 PM
