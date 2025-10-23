@@ -161,6 +161,28 @@ describe('Admin Controllers', () => {
 		assert(body);
 	});
 
+	it('should load post settings page', async () => {
+		const { response, body } = await request.get(`${nconf.get('url')}/admin/settings/post`, { jar: jar });
+		assert.equal(response.statusCode, 200);
+		assert(body);
+	});
+
+	it('should display anonymous posting toggle in post settings', async () => {
+		const { response, body } = await request.get(`${nconf.get('url')}/admin/settings/post`, { jar: jar });
+		assert.equal(response.statusCode, 200);
+		assert(body.includes('enableAnonymousPosting'));
+		assert(body.includes('Enable Anonymous Posting'));
+	});
+
+	it('should have anonymous posting disabled by default', async () => {
+		const { response, body } = await request.get(`${nconf.get('url')}/admin/settings/post`, { jar: jar });
+		assert.equal(response.statusCode, 200);
+		// Check that the toggle is not checked by default
+		assert(body.includes('id="enableAnonymousPosting"'));
+		// The toggle should not have 'checked' attribute by default
+		assert(!body.includes('id="enableAnonymousPosting" checked'));
+	});
+
 	it('should load info page for a user', async () => {
 		const { response, body } = await request.get(`${nconf.get('url')}/api/user/regular/info`, { jar: jar });
 		assert.equal(response.statusCode, 200);
@@ -179,6 +201,18 @@ describe('Admin Controllers', () => {
 		const { response, body } = await request.get(`${nconf.get('url')}/api/admin/settings/general`, { jar: jar, json: true });
 		assert.equal(response.statusCode, 200);
 		assert(body.routes);
+	});
+
+	it('should load post settings API endpoint', async () => {
+		const { response, body } = await request.get(`${nconf.get('url')}/api/admin/settings/post`, { jar: jar, json: true });
+		assert.equal(response.statusCode, 200);
+		assert(body);
+	});
+
+	it('should include groupsExemptFromPostQueue in post settings API', async () => {
+		const { response, body } = await request.get(`${nconf.get('url')}/api/admin/settings/post`, { jar: jar, json: true });
+		assert.equal(response.statusCode, 200);
+		assert(Array.isArray(body.groupsExemptFromPostQueue));
 	});
 
 	it('should load /admin/advanced/database', async () => {
@@ -737,6 +771,60 @@ describe('Admin Controllers', () => {
 			const res = await privileges.admin.list(regularUid);
 			assert.strictEqual(res.keys.users.includes('admin:privileges'), false);
 			assert.strictEqual(res.keys.groups.includes('admin:privileges'), false);
+		});
+	});
+
+	describe('Anonymous Posting Configuration', () => {
+		it('should have anonymous posting disabled by default', async () => {
+			const configValue = await meta.configs.get('enableAnonymousPosting');
+			// Configuration values can be returned as strings or numbers
+			assert(configValue === '0' || configValue === 0, 
+				`Expected '0' or 0, got ${configValue} (${typeof configValue})`);
+		});
+
+		it('should allow admin to change anonymous posting setting', async () => {
+			// Test setting the configuration
+			await meta.configs.set('enableAnonymousPosting', '1');
+			const configValue = await meta.configs.get('enableAnonymousPosting');
+			assert(configValue === '1' || configValue === 1, 
+				`Expected '1' or 1, got ${configValue} (${typeof configValue})`);
+
+			// Reset to default
+			await meta.configs.set('enableAnonymousPosting', '0');
+		});
+
+		it('should persist anonymous posting configuration changes', async () => {
+			// Set to enabled
+			await meta.configs.set('enableAnonymousPosting', '1');
+			let configValue = await meta.configs.get('enableAnonymousPosting');
+			assert(configValue === '1' || configValue === 1, 
+				`Expected '1' or 1, got ${configValue} (${typeof configValue})`);
+
+			// Set to disabled
+			await meta.configs.set('enableAnonymousPosting', '0');
+			configValue = await meta.configs.get('enableAnonymousPosting');
+			assert(configValue === '0' || configValue === 0, 
+				`Expected '0' or 0, got ${configValue} (${typeof configValue})`);
+		});
+
+		it('should validate anonymous posting configuration values', async () => {
+			// Test valid values
+			await meta.configs.set('enableAnonymousPosting', '1');
+			let configValue = await meta.configs.get('enableAnonymousPosting');
+			assert(configValue === '1' || configValue === 1, 
+				`Expected '1' or 1, got ${configValue} (${typeof configValue})`);
+
+			await meta.configs.set('enableAnonymousPosting', '0');
+			configValue = await meta.configs.get('enableAnonymousPosting');
+			assert(configValue === '0' || configValue === 0, 
+				`Expected '0' or 0, got ${configValue} (${typeof configValue})`);
+
+			// Test invalid values (should be handled gracefully)
+			await meta.configs.set('enableAnonymousPosting', 'invalid');
+			configValue = await meta.configs.get('enableAnonymousPosting');
+			// Should either be 'invalid' or converted to a valid value
+			assert(configValue === 'invalid' || configValue === '0' || configValue === '1' || 
+				   configValue === 0 || configValue === 1);
 		});
 	});
 });

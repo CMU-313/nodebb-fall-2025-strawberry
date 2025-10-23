@@ -20,6 +20,7 @@ export default defineConfig([
 			'logs/',
 			'public/uploads/',
 			'public/vendor/',
+			'vendor/',
 			'.idea/',
 			'.vscode/',
 			'*.ipr',

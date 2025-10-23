@@ -32,6 +32,11 @@
 				</div>
 
 				<div class="form-check form-switch mb-3">
+					<input class="form-check-input" type="checkbox" id="enableAnonymousPosting" data-field="enableAnonymousPosting" />
+					<label class="form-check-label" for="enableAnonymousPosting">[[admin/settings/post:enable-anonymous-posting]]</label>
+				</div>
+
+				<div class="form-check form-switch mb-3">
 					<input class="form-check-input" type="checkbox" id="topicBacklinks" data-field="topicBacklinks">
 					<label for="topicBacklinks" class="form-check-label">[[admin/settings/post:backlinks.enabled]]</label>
 					<p class="form-text">[[admin/settings/post:backlinks.help]]</p>
