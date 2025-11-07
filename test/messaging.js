@@ -47,6 +47,11 @@ describe('Messaging Library', () => {
 	};
 
 	before(async () => {
+		// Disable rate limiting for tests to prevent flakiness
+		meta.config.initialPostDelay = 0;
+		meta.config.newbiePostDelay = 0;
+		meta.config.chatMessageDelay = 0;
+		
 		// Create 3 users: 1 admin, 2 regular
 		({
 			foo: mocks.users.foo.uid,
