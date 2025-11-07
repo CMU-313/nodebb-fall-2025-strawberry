@@ -184,6 +184,11 @@ describe('API', async () => {
 			return;
 		}
 
+		// Disable rate limiting for tests to prevent flakiness
+		meta.config.initialPostDelay = 0;
+		meta.config.newbiePostDelay = 0;
+		meta.config.newbieReputationThreshold = 0;
+
 		// Create sample users
 		const adminUid = await user.create({ username: 'admin', password: '123456' });
 		const unprivUid = await user.create({ username: 'unpriv', password: '123456' });

@@ -196,9 +196,9 @@ describe('Search', () => {
 			sortBy: 'topic.timestamp',
 			sortDirection: 'desc',
 		});
-		assert(result.posts.length, 2);
-		assert(result.posts[0].topic.title === 'child category topic');
-		assert(result.posts[1].topic.title === 'java mongodb redis');
+		assert.strictEqual(result.posts.length, 2);
+		assert.strictEqual(result.posts[0].topic.title, 'child category topic');
+		assert.strictEqual(result.posts[1].topic.title, 'java mongodb redis');
 	});
 
 	it('should return json search data with no categories', async () => {

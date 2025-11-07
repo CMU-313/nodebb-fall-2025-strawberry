@@ -34,6 +34,11 @@ describe('Post\'s', () => {
 	let cid;
 
 	before(async () => {
+		// Disable rate limiting for tests to prevent flakiness
+		meta.config.initialPostDelay = 0;
+		meta.config.newbiePostDelay = 0;
+		// Don't disable newbieReputationThreshold - some tests rely on it
+		
 		voterUid = await user.create({ username: 'upvoter' });
 		voteeUid = await user.create({ username: 'upvotee' });
 		globalModUid = await user.create({ username: 'globalmod', password: 'globalmodpwd' });
