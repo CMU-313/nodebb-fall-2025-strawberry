@@ -136,7 +136,7 @@ Plugins.reload = async function () {
 		deprecation.affected.forEach(id => console.log(`  ${chalk.yellow('*')} ${id}`));
 	});
 
-	// Lower priority runs earlier
+	// Lower priority runs earlier 
 	Object.keys(Plugins.loadedHooks).forEach((hook) => {
 		Plugins.loadedHooks[hook].sort((a, b) => a.priority - b.priority);
 	});
@@ -220,7 +220,7 @@ Plugins.normalise = async function (apiReturn) {
 		pluginMap[plugin.id].id = pluginMap[plugin.id].id || plugin.id;
 		pluginMap[plugin.id].name = plugin.name || pluginMap[plugin.id].name;
 		pluginMap[plugin.id].description = plugin.description;
-		pluginMap[plugin.id].url = pluginMap[plugin.id].url || plugin.url;
+		pluginMap[plugin.id].url = pluginMap[plugin.id].url || plugin.url || (plugin.repository ? plugin.repository.url : '') || '';
 		pluginMap[plugin.id].installed = true;
 		pluginMap[plugin.id].isTheme = themeNamePattern.test(plugin.id);
 		pluginMap[plugin.id].error = plugin.error || false;

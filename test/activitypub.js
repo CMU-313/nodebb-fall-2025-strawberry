@@ -22,6 +22,7 @@ describe('ActivityPub integration', () => {
 	before(async () => {
 		meta.config.activitypubEnabled = 1;
 		meta.config.activitypubAllowLoopback = 1;
+		meta.config.initialPostDelay = 0;
 		await install.giveWorldPrivileges();
 	});
 
