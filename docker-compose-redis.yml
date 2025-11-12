@@ -9,12 +9,14 @@ services:
     restart: unless-stopped
 
   translator:
-    build: ../llm-experiment-microservice-strawberry
+    build: ../llm-experiment-microservice-strawberry 
     command: flask run --host=0.0.0.0
     depends_on:
       - ollama
     environment:
       - OLLAMA_HOST=http://ollama:11434
+      - MODEL_NAME=qwen3:0.6b
+      - OLLAMA_MODEL=qwen3:0.6b
       - FLASK_APP=app.py
       - FLASK_ENV=development
     ports:
