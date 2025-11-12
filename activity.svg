@@ -1,0 +1,1118 @@
+<svg height="830" width="970" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect fill="#CCE4CC" height="99.5%" rx="4.5" stroke="#003D00" width="99.5%" x="0.5" y="0.5"/>
+<defs>
+<image height="100" id="thejonathangu" width="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAF5ElEQVR4nOzX0QnbMBRA0aZ4DA/hDY039BAeQCP0I1DoV6GkMvE9Z4H3QM6NtIwxfgA83c+7FwCYQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7ICEZdqk8zqmzeKfbet+9wqf5Kv7CnO+Ojc7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IWKZN2tZ92qw5zuu4ewWKnvdTmsPNDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEl5jjDmTzuuYMwj4Ltu6T5iyTJjxYHMOaZpH/iE5I948Y4EEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IGG5e4Hvdl7H3SvwF86IN7HjD9u6373CJykdv3nGAgliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCa8xxt07APx3bnZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkDCrwAAAP//8dEl+IW6F7sAAAAASUVORK5CYII="/>
+<image height="100" id="Avalon Sueiro" width="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAJYCAIAAAAxBA+LAAAaAklEQVR4Ae3AA6AkWZbG8f937o3IzKdyS2Oubdu2bdu2bdu2bWmMnpZKr54yMyLu+Xa3anqmhztr1a/u7u5y1VVXXXXVVf9PUbnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXPW/3F8dfjlXXXXVf5+X2fx4rvpfjMpVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/od3dXf7n+avDL+eqq6666qr/W15m8+P5H4fKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f6Hd3V2uuuqqq6666v8pKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5ar/5f7q8Mu56qqr/vu8zObHc9X/YlSuuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/C+3u7vI/z18dfjlXXfUf7WU2P56rXjR/dfjlXHXVf7SX2fx4/sehctVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19Urrrqqquuuur/LypXXXXVVVdd9f8Xlauuuuqqq676/4vKVVddddVVV/3/ReWqq6666qqr/v+ictVVV1111VX/f1G56qqrrrrqqv+/qFx11VVXXXXV/19od3eXq6666qqrrvp/ispVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f9F5aqrrrrqqqv+/6Jy1VVXXXXVVf9/Ubnqqquuuuqq/7+oXHXVVVddddX/X1Suuuqqq6666v8vKlddddVVV131/xeVq6666qqrrvr/i8pVV1111VVX/f/FPwKmdyZl/K6kZQAAAABJRU5ErkJggg=="/>
+<image height="100" id="avalonsueiro" width="100" xlink:href="data:image/png;base64,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"/>
+<image height="100" id="kevinzheng117" width="100" xlink:href="data:image/png;base64,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"/>
+<image height="100" id="michelleguo04" width="100" xlink:href="data:image/png;base64,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"/>
+<image height="100" id="apollolu13" width="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAaQAAAGkCAIAAADxLsZiAAAF60lEQVR4nOzX0YncMBRA0UxwB1PL9OPS3I9rMaiEfCzkN7DZldZzz2ngPZB9kbYxxi+Ad/d79QIAM4gdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QsE2bdJzXtFl82v56rl7hK/nqbmHOV+dmBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJGyrF+BnOc5r9QrwLcTuv+yv5+oVvtJbls4Z8cEzFkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDEsQOSBA7IEHsgASxAxLEDkgQOyBB7IAEsQMSxA5IEDsgQeyABLEDErbVC9zbcV6rV+AfnBEfHmOM1Tvclb+IJfbXc/UKt+QZCySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCY8xxpxJx3nNGQTcy/56TpiyTZjxxuYcEvzl0vBpnrFAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliByQ8xhirdwD4dm52QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAgtgBCWIHJIgdkCB2QILYAQliBySIHZAgdkCC2AEJYgckiB2QIHZAwp8AAAD//zm5Kpq18XhSAAAAAElFTkSuQmCC"/>
+</defs>
+<g transform="translate(0, 30)">
+<g transform="translate(25, 10)">
+<text class="header">
+Project 2B (2025-09-16–2025-09-26)
+
+</text>
+</g>
+<g transform="translate(0, 25)">
+<g transform="translate(0, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/thejonathangu">
+<text class="stat bold">
+thejonathangu
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#thejonathangu"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=thejonathangu&amp;amp;since=2025-09-16T00:00:00+00:00&amp;amp;until=2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+5
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+201
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+7
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Athejonathangu+type%3Aissue+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Athejonathangu+type%3Apr+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(190, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/kevinzheng117">
+<text class="stat bold">
+kevinzheng117
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#kevinzheng117"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=kevinzheng117&amp;amp;since=2025-09-16T00:00:00+00:00&amp;amp;until=2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+52
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Akevinzheng117+type%3Aissue+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Akevinzheng117+type%3Apr+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(380, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/apollolu13">
+<text class="stat bold">
+apollolu13
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#apollolu13"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=apollolu13&amp;amp;since=2025-09-16T00:00:00+00:00&amp;amp;until=2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+51
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Aapollolu13+type%3Aissue+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Aapollolu13+type%3Apr+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(570, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/michelleguo04">
+<text class="stat bold">
+michelleguo04
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#michelleguo04"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=michelleguo04&amp;amp;since=2025-09-16T00:00:00+00:00&amp;amp;until=2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+7
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Amichelleguo04+type%3Aissue+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Amichelleguo04+type%3Apr+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(760, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/avalonsueiro">
+<text class="stat bold">
+avalonsueiro
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#avalonsueiro"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=avalonsueiro&amp;amp;since=2025-09-16T00:00:00+00:00&amp;amp;until=2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Aavalonsueiro+type%3Aissue+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Aavalonsueiro+type%3Apr+created%3A2025-09-16T00:00:00+00:00..2025-09-26T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0, 230)">
+<g transform="translate(25, 10)">
+<text class="header">
+Project 2C (2025-09-27–2025-10-10)
+
+</text>
+</g>
+<g transform="translate(0, 25)">
+<g transform="translate(0, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/thejonathangu">
+<text class="stat bold">
+thejonathangu
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#thejonathangu"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=thejonathangu&amp;amp;since=2025-09-27T00:00:00+00:00&amp;amp;until=2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+8
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+436
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+26
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Athejonathangu+type%3Aissue+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Athejonathangu+type%3Apr+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(190, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/michelleguo04">
+<text class="stat bold">
+michelleguo04
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#michelleguo04"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=michelleguo04&amp;amp;since=2025-09-27T00:00:00+00:00&amp;amp;until=2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Amichelleguo04+type%3Aissue+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+4
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Amichelleguo04+type%3Apr+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(380, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/apollolu13">
+<text class="stat bold">
+apollolu13
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#apollolu13"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=apollolu13&amp;amp;since=2025-09-27T00:00:00+00:00&amp;amp;until=2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Aapollolu13+type%3Aissue+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+4
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Aapollolu13+type%3Apr+created%3A2025-09-27T00:00:00+00:00..2025-10-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0, 430)">
+<g transform="translate(25, 10)">
+<text class="header">
+Project 3 (2025-10-11–2025-10-28)
+
+</text>
+</g>
+<g transform="translate(0, 25)">
+<g transform="translate(0, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/apollolu13">
+<text class="stat bold">
+apollolu13
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#apollolu13"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=apollolu13&amp;amp;since=2025-10-11T00:00:00+00:00&amp;amp;until=2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+7
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+797
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+130
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Aapollolu13+type%3Aissue+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Aapollolu13+type%3Apr+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+3
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(190, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/michelleguo04">
+<text class="stat bold">
+michelleguo04
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#michelleguo04"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=michelleguo04&amp;amp;since=2025-10-11T00:00:00+00:00&amp;amp;until=2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+6
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+88
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+82
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Amichelleguo04+type%3Aissue+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Amichelleguo04+type%3Apr+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+5
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(380, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/thejonathangu">
+<text class="stat bold">
+thejonathangu
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#thejonathangu"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=thejonathangu&amp;amp;since=2025-10-11T00:00:00+00:00&amp;amp;until=2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+5
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+390
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+77
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Athejonathangu+type%3Aissue+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Athejonathangu+type%3Apr+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+4
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+3
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(570, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/avalonsueiro">
+<text class="stat bold">
+avalonsueiro
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#avalonsueiro"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=avalonsueiro&amp;amp;since=2025-10-11T00:00:00+00:00&amp;amp;until=2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+4
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+39
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Aavalonsueiro+type%3Aissue+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Aavalonsueiro+type%3Apr+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+5
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(760, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/Avalon Sueiro">
+<text class="stat bold">
+Avalon Sueiro
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#Avalon Sueiro"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=Avalon Sueiro&amp;amp;since=2025-10-11T00:00:00+00:00&amp;amp;until=2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+2
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+585
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+152
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3AAvalon Sueiro+type%3Aissue+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3AAvalon Sueiro+type%3Apr+created%3A2025-10-11T00:00:00+00:00..2025-10-28T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<g transform="translate(0, 630)">
+<g transform="translate(25, 10)">
+<text class="header">
+Project 4 (2025-10-28–2025-11-10)
+
+</text>
+</g>
+<g transform="translate(0, 25)">
+<g transform="translate(0, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/thejonathangu">
+<text class="stat bold">
+thejonathangu
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#thejonathangu"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=thejonathangu&amp;amp;since=2025-10-28T00:00:00+00:00&amp;amp;until=2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+3
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+36816
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+808
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Athejonathangu+type%3Aissue+created%3A2025-10-28T00:00:00+00:00..2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Athejonathangu+type%3Apr+created%3A2025-10-28T00:00:00+00:00..2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+3
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+<g transform="translate(190, 0)">
+<g transform="translate(25, 20)">
+<g>
+<a xlink:href="https://github.com/michelleguo04">
+<text class="stat bold">
+michelleguo04
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<use xlink:href="#michelleguo04"/>
+</g>
+</g>
+<g transform="translate(140, 25)">
+<g transform="translate(0, 0)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.643 3.143L.427 1.927A.25.25 0 000 2.104V5.75c0 .138.112.25.25.25h3.646a.25.25 0 00.177-.427L2.715 4.215a6.5 6.5 0 11-1.18 4.458.75.75 0 10-1.493.154 8.001 8.001 0 101.6-5.684zM7.75 4a.75.75 0 01.75.75v2.992l2.028.812a.75.75 0 01-.557 1.392l-2.5-1A.75.75 0 017 8.25v-3.5A.75.75 0 017.75 4z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/commits?author=michelleguo04&amp;amp;since=2025-10-28T00:00:00+00:00&amp;amp;until=2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 20)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 10h-10v-10h-4v10h-10v4h10v10h4v-10h10z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 40)">
+<svg class="icon" height="15" viewBox="0 0 25 25" width="15" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 10h24v4h-24z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+<g transform="translate(0, 60)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm9 3a1 1 0 11-2 0 1 1 0 012 0zm-.25-6.25a.75.75 0 00-1.5 0v3.5a.75.75 0 001.5 0v-3.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/issues?q=author%3Amichelleguo04+type%3Aissue+created%3A2025-10-28T00:00:00+00:00..2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</a>
+</g>
+<g transform="translate(0, 80)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.177 3.073L9.573.677A.25.25 0 0110 .854v4.792a.25.25 0 01-.427.177L7.177 3.427a.25.25 0 010-.354zM3.75 2.5a.75.75 0 100 1.5.75.75 0 000-1.5zm-2.25.75a2.25 2.25 0 113 2.122v5.256a2.251 2.251 0 11-1.5 0V5.372A2.25 2.25 0 011.5 3.25zM11 2.5h-1V4h1a1 1 0 011 1v5.628a2.251 2.251 0 101.5 0V5A2.5 2.5 0 0011 2.5zm1 10.25a.75.75 0 111.5 0 .75.75 0 01-1.5 0zM3.75 12a.75.75 0 100 1.5.75.75 0 000-1.5z" fill-rule="evenodd"/>
+</svg>
+<a xlink:href="https://github.com/CMU-313/nodebb-fall-2025-strawberry/pulls?q=author%3Amichelleguo04+type%3Apr+created%3A2025-10-28T00:00:00+00:00..2025-11-10T23:59:59+00:00">
+<text class="stat" x="25" y="12.5">
+1
+</text>
+</a>
+</g>
+<g transform="translate(0, 100)">
+<svg class="icon" xmlns="http://www.w3.org/2000/svg">
+<path d="M1.75 1h8.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 10.25 10H7.061l-2.574 2.573A1.458 1.458 0 0 1 2 11.543V10h-.25A1.75 1.75 0 0 1 0 8.25v-5.5C0 1.784.784 1 1.75 1ZM1.5 2.75v5.5c0 .138.112.25.25.25h1a.75.75 0 0 1 .75.75v2.19l2.72-2.72a.749.749 0 0 1 .53-.22h3.5a.25.25 0 0 0 .25-.25v-5.5a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25Zm13 2a.25.25 0 0 0-.25-.25h-.5a.75.75 0 0 1 0-1.5h.5c.966 0 1.75.784 1.75 1.75v5.5A1.75 1.75 0 0 1 14.25 12H14v1.543a1.458 1.458 0 0 1-2.487 1.03L9.22 12.28a.749.749 0 0 1 .326-1.275.749.749 0 0 1 .734.215l2.22 2.22v-2.19a.75.75 0 0 1 .75-.75h1a.25.25 0 0 0 .25-.25Z" fill-rule="evenodd"/>
+</svg>
+<text class="stat" x="25" y="12.5">
+0
+</text>
+</g>
+</g>
+</g>
+</g>
+</g>
+<style>
+
+.header {
+    font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
+    fill: #007A00;
+    animation: fadeInAnimation 0.8s ease-in-out forwards;
+}
+.stat {
+    font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #444;
+}
+.bold { font-weight: 700 }
+.icon {
+    fill: #003D00;
+    display: block;
+}
+
+</style>
+</svg>
